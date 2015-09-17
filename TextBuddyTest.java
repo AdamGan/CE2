@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import org.junit.Test;
 
@@ -19,13 +20,15 @@ public class TextBuddyTest {
 		myList.add("e");
 		
 		ArrayList<String> toBeSorted = new ArrayList<>();
-		myList.add("1");
-		myList.add("c");
-		myList.add("3");
-		myList.add("e");
+		toBeSorted.add("1");
+		toBeSorted.add("c");
+		toBeSorted.add("3");
+		toBeSorted.add("e");
 		
 		assertFalse(myList.equals(myTextBuddy.sortInput(toBeSorted)));
 		
+		Collections.sort(myList);
+		assertEquals(myList, myTextBuddy.sortInput(toBeSorted));
 		
 	}
 
