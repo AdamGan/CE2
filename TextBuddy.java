@@ -190,12 +190,17 @@ public class TextBuddy {
 		public int search(ArrayList<String> myText, String query) {
 			int count = 0;
 			
-			for(int i = 0; i < myText.size(); i++) {
-				if(myText.get(i).contains(query)) {
-					count++;
+			if(myText.size() == 0) {
+				showToUser(String.format(MSG_EMPTY, fileName));
+			}
+			else {
+				for(int i = 0; i < myText.size(); i++) {
+					if(myText.get(i).contains(query)) {
+						showToUser(String.format(MSG_DISPLAY, i+1, myText.get(i)));
+						count++;
+					}
 				}
 			}
-			
 			return count;
 		}
 }
