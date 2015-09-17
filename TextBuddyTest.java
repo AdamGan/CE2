@@ -31,5 +31,12 @@ public class TextBuddyTest {
 		assertEquals(myList, myTextBuddy.sortInput(toBeSorted));
 		
 	}
+	
+	public void testSearch() {
+		ArrayList<String> myList = new ArrayList<>();
+		assertTrue(myTextBuddy.search(myList, "present") == 0);
+		
+	}
+	
 
 }

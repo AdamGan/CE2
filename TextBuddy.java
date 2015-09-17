@@ -97,6 +97,9 @@ public class TextBuddy {
 		case "sort":	text = sortInput(text);
 						break;
 						
+		case "search":	search(text, temp[1]);
+						break;
+						
 		default: 		invalid(reader);
 		}
 		//recursive prompt next user input
@@ -177,9 +180,16 @@ public class TextBuddy {
 		return myText;
 	}
 	
+	//sorts and returns the arrayList
 	public ArrayList<String> sortInput(ArrayList<String> myText) {
 		Collections.sort(myText);
 		return myText;
 	}
 	
+	//searches for matches, prints them and returns the number of matches
+		public int search(ArrayList<String> myText, String query) {
+			int count = 0;
+			
+			return count;
+		}
 }
