@@ -13,6 +13,20 @@ public class TextBuddyTest {
 		ArrayList<String> myList = new ArrayList<>();
 		
 		assertEquals(myList, myTextBuddy.sortInput(myList));
+		myList.add("1");
+		myList.add("c");
+		myList.add("3");
+		myList.add("e");
+		
+		ArrayList<String> toBeSorted = new ArrayList<>();
+		myList.add("1");
+		myList.add("c");
+		myList.add("3");
+		myList.add("e");
+		
+		assertFalse(myList.equals(myTextBuddy.sortInput(toBeSorted)));
+		
+		
 	}
 
 }

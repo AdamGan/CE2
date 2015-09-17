@@ -178,7 +178,7 @@ public class TextBuddy {
 	}
 	
 	public ArrayList<String> sortInput(ArrayList<String> myText) {
-		
+		Collections.sort(myText);
 		return myText;
 	}
 	
