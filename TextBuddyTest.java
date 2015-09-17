@@ -37,6 +37,13 @@ public class TextBuddyTest {
 		ArrayList<String> myList = new ArrayList<>();
 		assertTrue(myTextBuddy.search(myList, "present") == 0);
 		
+		myList.add("little brown fox");
+		myList.add("jumped over the moon");
+		myList.add("little red riding hood");
+		myList.add("big brown wolf");
+		
+		assertTrue(myTextBuddy.search(myList, "present") == 0);
+		
 	}
 	
 
