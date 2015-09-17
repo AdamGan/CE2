@@ -190,6 +190,12 @@ public class TextBuddy {
 		public int search(ArrayList<String> myText, String query) {
 			int count = 0;
 			
+			for(int i = 0; i < myText.size(); i++) {
+				if(myText.get(i).contains(query)) {
+					count++;
+				}
+			}
+			
 			return count;
 		}
 }

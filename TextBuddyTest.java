@@ -43,6 +43,7 @@ public class TextBuddyTest {
 		myList.add("big brown wolf");
 		
 		assertTrue(myTextBuddy.search(myList, "present") == 0);
+		assertTrue(myTextBuddy.search(myList, "little") == 2);
 		
 	}
 	
