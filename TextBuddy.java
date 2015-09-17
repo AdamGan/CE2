@@ -94,6 +94,9 @@ public class TextBuddy {
 		case "exit": 	exit();
 						break;
 						
+		case "sort":	text = sortInput(text);
+						break;
+						
 		default: 		invalid(reader);
 		}
 		//recursive prompt next user input
@@ -171,6 +174,11 @@ public class TextBuddy {
 	public ArrayList<String> addText(ArrayList<String> myText, String temp) {
 		myText.add(temp);
 		showToUser(String.format(MSG_ADDED, fileName, temp));
+		return myText;
+	}
+	
+	public ArrayList<String> sortInput(ArrayList<String> myText) {
+		
 		return myText;
 	}
 	
